@@ -8,14 +8,15 @@ namespace Rein
     {
         static void Main(string[] args)
         {
-            System.Console.Write("content-type: text/html\n");
-            System.Console.Write("\n");
-            foreach (string arg in args) {
-                StreamReader sr = new StreamReader(arg, Encoding.GetEncoding("shift_jis"));
-                string text = sr.ReadToEnd();
-                sr.Close();
-                System.Console.Write(text);
-            }
+            System.Console.Write("HTTP/1.1 200 OK\n");
+            System.Console.Write("Server: Rein\n");
+            System.Console.Write("Date: " + "\n");
+            System.Console.Write("Content-type: text/html\n");
+            System.Console.Write("\n"); // Close header
+            StreamReader ScriptFile = new StreamReader(args[0], Encoding.GetEncoding("utf-8"));
+            string body = ScriptFile.ReadToEnd();
+            ScriptFile.Close();
+            System.Console.Write(body);
         }
     }
 }
