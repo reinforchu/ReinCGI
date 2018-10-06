@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("Rein")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Rein CGI")]
+[assembly: AssemblyDescription("Rein CGI")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Rein")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCompany("@reinforchu")]
+[assembly: AssemblyProduct("Rein CGI")]
+[assembly: AssemblyCopyright("Copyright ©  2012-2018 reinforchu")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
